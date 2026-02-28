@@ -103,6 +103,21 @@
             border-radius: 2px;
         }
 
+        /* scroll animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-up:nth-child(2) { transition-delay: 0.1s; }
+        .fade-up:nth-child(3) { transition-delay: 0.2s; }
+
         /* hero */
         #hero {
             height: 100vh;
@@ -256,6 +271,12 @@
             font-weight: 300;
         }
 
+        /* teal highlight for key words */
+        .about-text span.tag {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
         .about-stats {
             flex: 1;
             display: flex;
@@ -269,10 +290,13 @@
             border-radius: 12px;
             border: 1px solid var(--border);
             text-align: center;
-            transition: border-color 0.3s ease;
+            transition: border-color 0.3s ease, transform 0.3s ease;
         }
 
-        .stat:hover { border-color: var(--accent); }
+        .stat:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
 
         .stat h3 {
             font-family: 'Syne', sans-serif;
@@ -487,27 +511,27 @@
     </section>
 
     <section id="about">
-        <div class="section-header">
+        <div class="section-header fade-up">
             <h2>about <span>me</span></h2>
             <div class="line"></div>
         </div>
         <div class="about-content">
-            <div class="about-text">
-                <p>Hey! I'm Kiran, a second year B.Tech CSE student from Hyderabad. I enjoy building web apps and solving problems with code.</p>
-                <p>I'm currently learning the MERN stack and practicing DSA daily. My goal is to land a good software engineering role by the time I graduate.</p>
-                <p>When I'm not coding I'm probably watching tech videos or contributing to .</p>
+            <div class="about-text fade-up">
+                <p>Hey! I'm <span class="tag">Kiran</span>, a second year B.Tech CSE student from Hyderabad. I enjoy building web apps and solving problems with code.</p>
+                <p>I'm currently learning the <span class="tag">MERN stack</span> and practicing <span class="tag">DSA daily</span>. My goal is to land a good software engineering role by the time I graduate.</p>
+                <p>When I'm not coding I'm probably watching tech videos or contributing to <span class="tag">GitHub</span>.</p>
             </div>
-            <div class="about-stats">
+            <div class="about-stats fade-up">
                 <div class="stat">
                     <h3>2nd</h3>
                     <p>Year B.Tech</p>
                 </div>
                 <div class="stat">
-                    <h3>30+</h3>
-                    <p>DSA Problems</p>
+                    <h3>200+</h3>
+                    <p>Total Commits</p>
                 </div>
                 <div class="stat">
-                    <h3>3+</h3>
+                    <h3>3</h3>
                     <p>Projects Built</p>
                 </div>
             </div>
@@ -515,86 +539,88 @@
     </section>
 
     <section id="skills">
-        <div class="section-header">
+        <div class="section-header fade-up">
             <h2>my <span>skills</span></h2>
             <div class="line"></div>
         </div>
-        <div class="skills-grid">
+        <div class="skills-grid fade-up">
             <div class="skill-card">HTML</div>
             <div class="skill-card">CSS</div>
             <div class="skill-card">JavaScript</div>
             <div class="skill-card">React</div>
             <div class="skill-card">Node.js</div>
+            <div class="skill-card">MongoDB</div>
             <div class="skill-card">C++</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">Python</div>
             <div class="skill-card">Git & GitHub</div>
         </div>
     </section>
 
-<section id="projects">
-    <div class="section-header">
-        <h2>my <span>projects</span></h2>
-        <div class="line"></div>
-    </div>
-    <div class="projects-grid">
+    <section id="projects">
+        <div class="section-header fade-up">
+            <h2>my <span>projects</span></h2>
+            <div class="line"></div>
+        </div>
+        <div class="projects-grid">
 
-        <!-- js from zero -->
-        <div class="project-card fade-up">
-            <div class="project-top">
-                <span class="project-icon">⚡</span>
-                <div class="project-links">
-                    <a href="https://github.com/kiranmv002/js-from-zero" target="_blank">GitHub →</a>
+            <div class="project-card fade-up">
+                <div class="project-top">
+                    <span class="project-icon">⚡</span>
+                    <div class="project-links">
+                        <a href="https://github.com/kiranmv002/js-from-zero" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+                <h3>JS From Zero</h3>
+                <p>Daily JavaScript practice — concepts, examples and mini projects from scratch.</p>
+                <div class="project-tags">
+                    <span>JavaScript</span>
+                    <span>Daily</span>
                 </div>
             </div>
-            <h3>JS From Zero</h3>
-            <p>Daily JavaScript practice — concepts, examples and mini projects from scratch.</p>
-            <div class="project-tags">
-                <span>JavaScript</span>
-            </div>
-        </div>
 
-        <!-- python mini projects -->
-        <div class="project-card fade-up">
-            <div class="project-top">
-                <span class="project-icon">🐍</span>
-                <div class="project-links">
-                    <a href="https://github.com/kiranmv002/Python-Mini-Projects" target="_blank">GitHub →</a>
+            <div class="project-card fade-up">
+                <div class="project-top">
+                    <span class="project-icon">🐍</span>
+                    <div class="project-links">
+                        <a href="https://github.com/kiranmv002/Python-Mini-Projects" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+                <h3>Python Mini Projects</h3>
+                <p>Small python projects built while learning — calculator, number guessing game and more.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>160+ commits</span>
                 </div>
             </div>
-            <h3>Python Mini Projects</h3>
-            <p>Small python projects built while learning — calculator, number guessing game and more.</p>
-            <div class="project-tags">
-                <span>Python</span>
-            </div>
-        </div>
 
-        <!-- c programming 30 days -->
-        <div class="project-card fade-up">
-            <div class="project-top">
-                <span class="project-icon">💻</span>
-                <div class="project-links">
-                    <a href="https://github.com/kiranmv002/C-Programming-30-Days-Challenge" target="_blank">GitHub →</a>
+            <div class="project-card fade-up">
+                <div class="project-top">
+                    <span class="project-icon">💻</span>
+                    <div class="project-links">
+                        <a href="https://github.com/kiranmv002/C-Programming-30-Days-Challenge" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+                <h3>C Programming - 30 Days</h3>
+                <p>Solving C problems daily for 30 days to build logic, problem solving and fundamentals.</p>
+                <div class="project-tags">
+                    <span>C</span>
+                    <span>DSA</span>
+                    <span>30 Days</span>
                 </div>
             </div>
-            <h3>C Programming - 30 Days</h3>
-            <p>Solving C problems daily for 30 days to build logic, problem solving and fundamentals.</p>
-            <div class="project-tags">
-                <span>C</span>
-                <span>DSA</span>
-                <span>30 Days</span>
-            </div>
-        </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
     <section id="contact">
-        <div class="section-header" style="text-align:center;">
+        <div class="section-header fade-up" style="text-align:center;">
             <h2>get in <span>touch</span></h2>
             <div class="line" style="margin: 12px auto 0;"></div>
         </div>
-        <div class="contact-content">
+        <div class="contact-content fade-up">
             <p>I'm open to internships, collaborations and project ideas. Feel free to reach out!</p>
-            <a href="mailto:kiran@gmail.com" class="btn-primary">say hello 👋</a>
+            <a href="mailto:kiranmv1551@gmail.com" class="btn-primary">say hello 👋</a>
             <div class="contact-links">
                 <a href="https://github.com/kiranmv002" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/mada-veera-kiran-872a96350/" target="_blank">LinkedIn</a>
@@ -639,6 +665,18 @@
                     item.style.color = '#00c9a7'
                 }
             })
+        })
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible')
+                }
+            })
+        }, { threshold: 0.1 })
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el)
         })
     </script>
 
