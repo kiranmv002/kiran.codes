@@ -430,8 +430,4 @@ footer {
     .about-stats { flex-direction: row; flex-wrap: wrap; }
     .stat { flex: 1; min-width: 100px; }
     .hero-btns { flex-direction: column; }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f7ff69127deed96ea82e1de717fca5879330d519
