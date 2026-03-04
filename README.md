@@ -44,6 +44,16 @@ file → `index.html`
 - key words in about section highlighted in teal color
 - scroll animations — sections fade up when they come into view
 
+### ✅ day 2 — separate files + new features
+files → `style.css` `script.js`
+
+- moved all css to style.css
+- moved all javascript to script.js
+- added typing animation in hero section
+- cycles through 3 lines with blinking cursor
+- added scroll to top button
+- button appears when scrolled down 400px
+- smooth scroll back to top on click
 ---
 
 ## 📊 progress
@@ -51,10 +61,10 @@ file → `index.html`
 | day     | what i did                            | status     |
 |---------|---------------------------------------|------------|
 | day 1   | full portfolio base with all sections | ✅ done    |
-
+| day 2   | scroll to top and typing animation    | ✅ done    |
 
 ---
 
-day 1 done. building something real every single day 🔥
+day 2 done. code is getting cleaner every day 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
