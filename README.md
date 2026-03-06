@@ -54,6 +54,16 @@ files → `style.css` `script.js`
 - added scroll to top button
 - button appears when scrolled down 400px
 - smooth scroll back to top on click
+
+### ✅ day 3 — profile photo
+files → `index.html` `style.css`
+
+- added profile photo in about section
+- photo on left, text and stats on right
+- teal border glow on hover
+- auto fallback avatar if no photo
+- stats moved below about text in a row
+- mobile responsive — photo resizes on small screens
 ---
 
 ## 📊 progress
