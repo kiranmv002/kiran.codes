@@ -64,6 +64,7 @@ files → `index.html` `style.css`
 - auto fallback avatar if no photo
 - stats moved below about text in a row
 - mobile responsive — photo resizes on small screens
+
 ---
 
 ## 📊 progress
@@ -72,9 +73,10 @@ files → `index.html` `style.css`
 |---------|---------------------------------------|------------|
 | day 1   | full portfolio base with all sections | ✅ done    |
 | day 2   | scroll to top and typing animation    | ✅ done    |
+| day 3   | add profile photo                     | ✅ done    |
 
 ---
 
-day 2 done. code is getting cleaner every day 🔥
+day 3 done. code is getting cleaner every day 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
