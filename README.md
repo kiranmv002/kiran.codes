@@ -65,6 +65,16 @@ files → `index.html` `style.css`
 - stats moved below about text in a row
 - mobile responsive — photo resizes on small screens
 
+### ✅ day 4 — dark light mode toggle
+files → `style.css` `script.js`
+
+- added theme toggle button in navbar
+- click moon to switch to light mode
+- click sun to switch back to dark mode
+- remembers your choice on page refresh
+- smooth transition between modes
+
+
 ---
 
 ## 📊 progress
