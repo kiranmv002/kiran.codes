@@ -26,7 +26,7 @@ window.addEventListener('scroll', () => {
     })
     navItems.forEach(item => {
         item.style.color = '#9aaac4'
-        if (item.getAttribute('href') === '#' + current) {
+        if (item.getAttribute('href') === `#${current}`) {
             item.style.color = '#00c9a7'
         }
     })
@@ -100,3 +100,25 @@ function type() {
 }
 
 setTimeout(type, 1200)
+
+// dark light mode toggle
+const themeBtn = document.getElementById('themeBtn')
+
+// check if user already set a preference before
+const savedTheme = localStorage.getItem('theme')
+if (savedTheme === 'light') {
+    document.body.classList.add('light')
+    themeBtn.textContent = '☀️'
+}
+
+themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light')
+
+    if (document.body.classList.contains('light')) {
+        themeBtn.textContent = '☀️'
+        localStorage.setItem('theme', 'light')
+    } else {
+        themeBtn.textContent = '🌙'
+        localStorage.setItem('theme', 'dark')
+    }
+})
