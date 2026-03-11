@@ -496,6 +496,18 @@ footer {
     font-size: 13px;
 }
 
+/* currently building card */
+.project-card.building {
+    border-style: dashed;
+    opacity: 0.7;
+}
+
+.project-card.building:hover {
+    opacity: 1;
+    border-color: var(--accent);
+    border-style: solid;
+}
+
 /* mobile */
 @media (max-width: 768px) {
     nav { padding: 20px 24px; }
