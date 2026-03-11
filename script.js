@@ -104,7 +104,6 @@ setTimeout(type, 1200)
 // dark light mode toggle
 const themeBtn = document.getElementById('themeBtn')
 
-// check if user already set a preference before
 const savedTheme = localStorage.getItem('theme')
 if (savedTheme === 'light') {
     document.body.classList.add('light')
