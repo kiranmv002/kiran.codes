@@ -74,6 +74,11 @@ files → `style.css` `script.js`
 - remembers your choice on page refresh
 - smooth transition between modes
 
+### ✅ day 5 — add more projects
+files → `index.html` `style.css`
+
+- added kiran.codes as a project card
+- added coming soon card with dashed border
 
 ---
 
