@@ -79,6 +79,8 @@ files → `index.html` `style.css`
 
 - added kiran.codes as a project card
 - added coming soon card with dashed border
+- dashed border becomes solid on hover
+- updated stats to 5 projects
 
 ---
 
