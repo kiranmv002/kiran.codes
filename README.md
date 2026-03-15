@@ -93,6 +93,6 @@ files → `index.html` `style.css`
 | day 5   | add more projects                     | ✅ done    |
 ---
 
-day 4 done. portfolio is looking clean in both dark and light mode 🔥
+day 5 done. portfolio is growing every day 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
