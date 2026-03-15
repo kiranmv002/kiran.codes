@@ -90,6 +90,7 @@ files → `index.html` `style.css`
 | day 2   | scroll to top and typing animation    | ✅ done    |
 | day 3   | add profile photo                     | ✅ done    |
 | day 4   | dark light mode toggle                | ✅ done    |
+| day 5   | add more projects                     | ✅ done    |
 ---
 
 day 4 done. portfolio is looking clean in both dark and light mode 🔥
