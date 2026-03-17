@@ -121,3 +121,44 @@ themeBtn.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark')
     }
 })
+// contact form submission
+const contactForm = document.getElementById('contactForm')
+const formStatus = document.getElementById('formStatus')
+const submitBtn = document.getElementById('submitBtn')
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault()
+
+        submitBtn.textContent = 'sending...'
+        submitBtn.disabled = true
+
+        const formData = new FormData(contactForm)
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            })
+
+            if (response.ok) {
+                formStatus.textContent = '✅ message sent! i will reply soon.'
+                formStatus.style.color = '#00c9a7'
+                contactForm.reset()
+                submitBtn.textContent = 'send message 🚀'
+                submitBtn.disabled = false
+            } else {
+                formStatus.textContent = '❌ something went wrong. try emailing me directly.'
+                formStatus.style.color = '#ff6b6b'
+                submitBtn.textContent = 'send message 🚀'
+                submitBtn.disabled = false
+            }
+        } catch {
+            formStatus.textContent = '❌ something went wrong. try emailing me directly.'
+            formStatus.style.color = '#ff6b6b'
+            submitBtn.textContent = 'send message 🚀'
+            submitBtn.disabled = false
+        }
+    })
+}
