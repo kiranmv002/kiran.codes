@@ -566,7 +566,12 @@ footer {
     padding: 14px;
 }
 
-
+.form-status {
+    text-align: center;
+    font-size: 14px;
+    min-height: 20px;
+    color: var(--accent);
+}
 /* mobile */
 @media (max-width: 768px) {
     nav { padding: 20px 24px; }
