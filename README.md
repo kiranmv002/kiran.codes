@@ -82,6 +82,16 @@ files → `index.html` `style.css`
 - dashed border becomes solid on hover
 - updated stats to 5 projects
 
+### ✅ day 7 — contact form
+files → `index.html` `style.css` `script.js`
+
+- added contact form with name email and message fields
+- connected to formspree — messages go to email
+- fields glow teal on focus
+- send button shows sending state
+- success and error messages after submit
+- form resets after successful send
+
 ---
 
 ## 📊 progress
