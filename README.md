@@ -82,7 +82,7 @@ files → `index.html` `style.css`
 - dashed border becomes solid on hover
 - updated stats to 5 projects
 
-### ✅ day 7 — contact form
+### ✅ day 6 — contact form
 files → `index.html` `style.css` `script.js`
 
 - added contact form with name email and message fields
@@ -103,8 +103,10 @@ files → `index.html` `style.css` `script.js`
 | day 3   | add profile photo                     | ✅ done    |
 | day 4   | dark light mode toggle                | ✅ done    |
 | day 5   | add more projects                     | ✅ done    |
+| day 6   | contact form                          | ✅ done    |
+
 ---
 
-day 5 done. portfolio is growing every day 🔥
+day 7 done. portfolio now has a working contact form 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
