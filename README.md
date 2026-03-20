@@ -107,6 +107,6 @@ files → `index.html` `style.css` `script.js`
 
 ---
 
-day 7 done. portfolio now has a working contact form 🔥
+day 6 done. portfolio now has a working contact form 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
