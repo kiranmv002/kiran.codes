@@ -162,3 +162,20 @@ if (contactForm) {
         }
     })
 }
+
+// skills progress bar animation
+const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const fills = entry.target.querySelectorAll('.skill-fill')
+            fills.forEach(fill => {
+                const width = fill.getAttribute('data-width')
+                fill.style.width = width + '%'
+            })
+        }
+    })
+}, { threshold: 0.3 })
+
+document.querySelectorAll('.skills-column').forEach(col => {
+    skillObserver.observe(col)
+})
