@@ -112,6 +112,7 @@ files → `index.html` `style.css` `script.js`
 | day 4   | dark light mode toggle                | ✅ done    |
 | day 5   | add more projects                     | ✅ done    |
 | day 6   | contact form                          | ✅ done    |
+| day 7   | skills progress bars                  | ✅ done    |
 
 ---
 
