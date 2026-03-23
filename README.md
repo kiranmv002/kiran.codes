@@ -92,6 +92,14 @@ files → `index.html` `style.css` `script.js`
 - success and error messages after submit
 - form resets after successful send
 
+### ✅ day 7 — skills progress bars
+files → `index.html` `style.css` `script.js`
+
+- replaced skill tags with animated progress bars
+- two column layout with 5 skills each
+- bars animate in when scrolled into view
+- percentage shown next to each skill name
+- gradient fill from teal to dark teal
 ---
 
 ## 📊 progress
