@@ -1,3 +1,12 @@
+// page loader
+const loader = document.getElementById('loader')
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        loader.classList.add('hidden')
+    }, 1800)
+})
+
 // navbar hamburger toggle
 const menuBtn = document.getElementById('menuBtn')
 const navLinks = document.getElementById('navLinks')
@@ -112,7 +121,6 @@ if (savedTheme === 'light') {
 
 themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('light')
-
     if (document.body.classList.contains('light')) {
         themeBtn.textContent = '☀️'
         localStorage.setItem('theme', 'light')
@@ -121,7 +129,8 @@ themeBtn.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark')
     }
 })
-// contact form submission
+
+// contact form
 const contactForm = document.getElementById('contactForm')
 const formStatus = document.getElementById('formStatus')
 const submitBtn = document.getElementById('submitBtn')
@@ -129,7 +138,6 @@ const submitBtn = document.getElementById('submitBtn')
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault()
-
         submitBtn.textContent = 'sending...'
         submitBtn.disabled = true
 
@@ -146,36 +154,16 @@ if (contactForm) {
                 formStatus.textContent = '✅ message sent! i will reply soon.'
                 formStatus.style.color = '#00c9a7'
                 contactForm.reset()
-                submitBtn.textContent = 'send message 🚀'
-                submitBtn.disabled = false
             } else {
-                formStatus.textContent = '❌ something went wrong. try emailing me directly.'
+                formStatus.textContent = '❌ something went wrong. email me directly.'
                 formStatus.style.color = '#ff6b6b'
-                submitBtn.textContent = 'send message 🚀'
-                submitBtn.disabled = false
             }
         } catch {
-            formStatus.textContent = '❌ something went wrong. try emailing me directly.'
+            formStatus.textContent = '❌ something went wrong. email me directly.'
             formStatus.style.color = '#ff6b6b'
-            submitBtn.textContent = 'send message 🚀'
-            submitBtn.disabled = false
         }
+
+        submitBtn.textContent = 'send message 🚀'
+        submitBtn.disabled = false
     })
 }
-
-// skills progress bar animation
-const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const fills = entry.target.querySelectorAll('.skill-fill')
-            fills.forEach(fill => {
-                const width = fill.getAttribute('data-width')
-                fill.style.width = width + '%'
-            })
-        }
-    })
-}, { threshold: 0.3 })
-
-document.querySelectorAll('.skills-column').forEach(col => {
-    skillObserver.observe(col)
-})
