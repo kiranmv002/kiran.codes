@@ -10,6 +10,16 @@
 </head>
 <body>
 
+    <!-- page loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">kiran.codes</div>
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+        </div>
+    </div>
+
     <nav>
         <div class="logo">kiran.codes</div>
         <ul id="navLinks">
@@ -44,13 +54,11 @@
             <div class="line"></div>
         </div>
         <div class="about-content">
-
             <div class="about-photo fade-up">
                 <div class="photo-wrapper">
                     <img src="assets/images/kiran.jpg" alt="Kiran" onerror="this.src='https://ui-avatars.com/api/?name=Kiran&background=00c9a7&color=0b0f19&size=300&bold=true&font-size=0.4'">
                 </div>
             </div>
-
             <div class="about-text fade-up">
                 <p>Hey! I'm <span class="tag">Kiran</span>, a second year B.Tech CSE student from Hyderabad. I enjoy building web apps and solving problems with code.</p>
                 <p>I'm currently learning the <span class="tag">MERN stack</span> and practicing <span class="tag">DSA daily</span>. My goal is to land a good software engineering role by the time I graduate.</p>
@@ -61,110 +69,53 @@
                     <div class="stat"><h3>5</h3><p>Projects Built</p></div>
                 </div>
             </div>
-
         </div>
     </section>
 
-<section id="skills">
+    <section id="skills">
         <div class="section-header fade-up">
             <h2>my <span>skills</span></h2>
             <div class="line"></div>
         </div>
-        <div class="skills-content">
-            <div class="skills-column fade-up">
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">HTML</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-track">
-                        <div class="skill-fill" data-width="90"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">CSS</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-track">
-                        <div class="skill-fill" data-width="85"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-percent">75%</span>
-                    </div>
-                    <div class="skill-track">
-                        <div class="skill-fill" data-width="75"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Python</span>
-                        <span class="skill-percent">80%</span>
-                    </div>
-                    <div class="skill-track">
-                        <div class="skill-fill" data-width="80"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">C</span>
-                        <span class="skill-percent">70%</span>
-                    </div>
-                    <div class="skill-track">
-                        <div class="skill-fill" data-width="70"></div>
-                    </div>
+
+        <div class="skills-categories fade-up">
+
+            <div class="skill-category">
+                <h4>Frontend</h4>
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
                 </div>
             </div>
-            <div class="skills-column fade-up">
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">C++</span>
-                        <span class="skill-percent">70%</span>
-                    </div>
-                    <div class="skill-track">
-                        <div class="skill-fill" data-width="70"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">React</span>
-                        <span class="skill-percent">60%</span>
-                    </div>
-                    <div class="skill-track">
-                        <div class="skill-fill" data-width="60"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Node.js</span>
-                        <span class="skill-percent">55%</span>
-                    </div>
-                    <div class="skill-track">
-                        <div class="skill-fill" data-width="55"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">MongoDB</span>
-                        <span class="skill-percent">50%</span>
-                    </div>
-                    <div class="skill-track">
-                        <div class="skill-fill" data-width="50"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Git & GitHub</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-track">
-                        <div class="skill-fill" data-width="85"></div>
-                    </div>
+
+            <div class="skill-category">
+                <h4>Backend</h4>
+                <div class="skill-tags">
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
                 </div>
             </div>
+
+            <div class="skill-category">
+                <h4>Languages</h4>
+                <div class="skill-tags">
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>Python</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Tools</h4>
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -243,31 +194,78 @@
             <h2>get in <span>touch</span></h2>
             <div class="line" style="margin: 12px auto 0;"></div>
         </div>
-        <div class="contact-wrapper fade-up">
-            <p class="contact-intro">I'm open to internships, collaborations and project ideas. Feel free to reach out!</p>
 
-            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xxxxxxxx" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="your name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="your email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="your message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary" id="submitBtn">send message 🚀</button>
-                <p class="form-status" id="formStatus"></p>
-            </form>
+        <div class="contact-grid fade-up">
 
-            <div class="contact-links">
-                <a href="https://github.com/kiranmv002" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/mada-veera-kiran-872a96350/" target="_blank">LinkedIn</a>
-                <a href="mailto:kiranmv1551@gmail.com">Email</a>
+            <!-- left side info -->
+            <div class="contact-info">
+                <p class="contact-intro">I'm open to internships, collaborations and project ideas. feel free to reach out anytime!</p>
+
+                <div class="contact-detail">
+                    <span class="contact-label">📍 location</span>
+                    <span class="contact-value">Hyderabad, India</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="contact-label">🎓 status</span>
+                    <span class="contact-value">B.Tech CSE — 2nd Year</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="contact-label">💼 open to</span>
+                    <span class="contact-value">Internships & Collaborations</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="contact-label">⚡ response</span>
+                    <span class="contact-value">Usually within 24 hours</span>
+                </div>
+
+                <div class="contact-socials">
+                    <a href="https://github.com/kiranmv002" target="_blank" class="social-card">
+                        <span class="social-icon">🐙</span>
+                        <div>
+                            <p class="social-title">GitHub</p>
+                            <p class="social-sub">github.com/kiranmv002</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mada-veera-kiran-872a96350/" target="_blank" class="social-card">
+                        <span class="social-icon">💼</span>
+                        <div>
+                            <p class="social-title">LinkedIn</p>
+                            <p class="social-sub">mada-veera-kiran</p>
+                        </div>
+                    </a>
+                    <a href="mailto:kiranmv1551@gmail.com" class="social-card">
+                        <span class="social-icon">📧</span>
+                        <div>
+                            <p class="social-title">Email</p>
+                            <p class="social-sub">kiranmv1551@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
             </div>
+
+            <!-- right side form -->
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xxxxxxxx" method="POST">
+                    <div class="form-group">
+                        <label>your name</label>
+                        <input type="text" name="name" placeholder="Kiran" required>
+                    </div>
+                    <div class="form-group">
+                        <label>your email</label>
+                        <input type="email" name="email" placeholder="kiran@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>your message</label>
+                        <textarea name="message" placeholder="hey kiran, i wanted to..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary submit-btn" id="submitBtn">send message 🚀</button>
+                    <p class="form-status" id="formStatus"></p>
+                </form>
+            </div>
+
         </div>
     </section>
-    
+
     <footer>
         <p>built by kiran with ❤️</p>
     </footer>
