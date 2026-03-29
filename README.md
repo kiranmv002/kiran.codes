@@ -100,6 +100,10 @@ files → `index.html` `style.css` `script.js`
 - bars animate in when scrolled into view
 - percentage shown next to each skill name
 - gradient fill from teal to dark teal
+
+### ✅ day 9 — smooth page loader
+files → `index.html` `style.css` `script.js`
+
 ---
 
 ## 📊 progress
