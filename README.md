@@ -104,6 +104,12 @@ files → `index.html` `style.css` `script.js`
 ### ✅ day 9 — smooth page loader
 files → `index.html` `style.css` `script.js`
 
+- added full screen loader on page open
+- kiran.codes logo pulses while loading
+- teal progress bar fills up
+- loader fades out smoothly after 1.8 seconds
+- portfolio appears underneath after load
+
 ---
 
 ## 📊 progress
