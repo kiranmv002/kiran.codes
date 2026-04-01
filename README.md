@@ -101,7 +101,7 @@ files → `index.html` `style.css` `script.js`
 - percentage shown next to each skill name
 - gradient fill from teal to dark teal
 
-### ✅ day 9 — smooth page loader
+### ✅ day 8 — smooth page loader
 files → `index.html` `style.css` `script.js`
 
 - added full screen loader on page open
