@@ -134,9 +134,9 @@ files → `404.html`
 | day 6   | contact form                          | ✅ done    |
 | day 7   | skills progress bars                  | ✅ done    |
 | day 8   | smooth page loader                    | ✅ done    |
-| day 9  | custom 404 page                       | ✅ done    |
+| day 9   | custom 404 page                       | ✅ done    |
 ---
 
-day 8 done. portfolio now has a clean loading screen 🔥
+day 9 done. portfolio now has a custom 404 page  🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
