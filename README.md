@@ -110,7 +110,7 @@ files → `index.html` `style.css` `script.js`
 - loader fades out smoothly after 1.8 seconds
 - portfolio appears underneath after load
 
-### ✅ day 10 — custom 404 page
+### ✅ day 9 — custom 404 page
 files → `404.html`
 
 - created custom 404 page
