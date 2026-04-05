@@ -120,11 +120,14 @@ files → `404.html`
 - quick nav links at bottom
 - works automatically on github pages
 
-### ✅ day 11 — active nav highlight
+### ✅ day 10 — active nav highlight
 files → `style.css` `script.js`
 
 - nav links now use css class instead of inline style
 - teal underline slides in under active section link
+- underline also appears on hover
+- smooth transition between sections
+- cleaner code using classList instead of style.color
 
 ---
 
