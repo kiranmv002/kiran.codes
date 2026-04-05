@@ -34,9 +34,10 @@ window.addEventListener('scroll', () => {
         }
     })
     navItems.forEach(item => {
-        item.style.color = '#9aaac4'
+        item.classList.remove('active')
+        item.style.color = ''
         if (item.getAttribute('href') === `#${current}`) {
-            item.style.color = '#00c9a7'
+            item.classList.add('active')
         }
     })
 })
