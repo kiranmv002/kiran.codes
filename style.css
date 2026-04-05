@@ -120,9 +120,31 @@ nav ul a {
     font-size: 15px;
     letter-spacing: 0.5px;
     transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+nav ul a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: width 0.3s ease;
 }
 
 nav ul a:hover { color: var(--text); }
+
+nav ul a:hover::after { width: 100%; }
+
+nav ul a.active {
+    color: var(--accent);
+}
+
+nav ul a.active::after { width: 100%; }
 
 .nav-right { display: flex; align-items: center; gap: 16px; }
 
