@@ -144,8 +144,9 @@ files → `style.css` `script.js`
 | day 7   | skills progress bars                  | ✅ done    |
 | day 8   | smooth page loader                    | ✅ done    |
 | day 9   | custom 404 page                       | ✅ done    |
+| day 10  | active nav highlight                  | ✅ done    |
 ---
 
-day 9 done. portfolio now has a custom 404 page  🔥
+day 11 done. portfolio is getting more and more polished 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
