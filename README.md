@@ -147,6 +147,6 @@ files → `style.css` `script.js`
 | day 10  | active nav highlight                  | ✅ done    |
 ---
 
-day 11 done. portfolio is getting more and more polished 🔥
+day 10 done. portfolio is getting more and more polished 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
