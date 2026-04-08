@@ -687,6 +687,27 @@ footer {
     border-bottom: 1px solid var(--border);
 }
 
+.footer-logo {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.footer-tagline {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 /* mobile */
 @media (max-width: 768px) {
     nav { padding: 20px 24px; }
