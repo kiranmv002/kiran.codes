@@ -707,6 +707,27 @@ footer {
     flex-direction: column;
     gap: 10px;
 }
+.footer-links a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover { color: var(--accent); }
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-socials a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
 
 /* mobile */
 @media (max-width: 768px) {
