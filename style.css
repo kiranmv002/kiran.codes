@@ -673,11 +673,18 @@ section { padding: 100px 80px; }
 
 /* footer */
 footer {
-    text-align: center;
-    padding: 28px;
+    background: var(--bg2);
     border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 13px;
+    padding: 50px 80px 28px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
 }
 
 /* mobile */
