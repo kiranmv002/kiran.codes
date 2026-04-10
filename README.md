@@ -129,6 +129,13 @@ files → `style.css` `script.js`
 - smooth transition between sections
 - cleaner code using classList instead of style.color
 
+### ✅ day 11 — footer improvements
+files → `index.html` `style.css`
+
+- redesigned footer with 3 column layout
+- left — logo and tagline
+- middle — quick nav links
+
 ---
 
 ## 📊 progress
