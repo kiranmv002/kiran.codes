@@ -155,6 +155,7 @@ files → `index.html` `style.css`
 | day 8   | smooth page loader                    | ✅ done    |
 | day 9   | custom 404 page                       | ✅ done    |
 | day 10  | active nav highlight                  | ✅ done    |
+| day 11  | footer improvements                   | ✅ done    |
 ---
 
 day 10 done. portfolio is getting more and more polished 🔥
