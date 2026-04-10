@@ -158,6 +158,6 @@ files → `index.html` `style.css`
 | day 11  | footer improvements                   | ✅ done    |
 ---
 
-day 10 done. portfolio is getting more and more polished 🔥
+day 11 done. portfolio is getting more and more polished 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
