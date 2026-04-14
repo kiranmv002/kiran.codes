@@ -55,16 +55,18 @@ document.querySelectorAll('.fade-up').forEach(el => {
     observer.observe(el)
 })
 
-// scroll to top button
+// scroll to top progress ring
 const scrollTopBtn = document.getElementById('scrollTop')
+const progressCircle = document.getElementById('progressCircle')
+const circumference = 2 * Math.PI * 18   // r=18 → 113.09
 
 window.addEventListener('scroll', () => {
-    if (scrollY > 400) {
-        scrollTopBtn.classList.add('show')
-    } else {
-        scrollTopBtn.classList.remove('show')
-    }
-})
+    const scrollTop = window.scrollY
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight
+    const scrollPercent = scrollTop / docHeight
+    const offset = circumference - (scrollPercent * circumference)
+
+
 
 scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
