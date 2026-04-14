@@ -339,7 +339,6 @@ section { padding: 100px 80px; }
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 /* scroll to top progress ring */
 .scroll-top {
     position: fixed;
@@ -381,6 +380,15 @@ section { padding: 100px 80px; }
     stroke-dasharray: 113;
     stroke-dashoffset: 113;
     transition: stroke-dashoffset 0.1s ease;
+}
+
+.scroll-arrow {
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
 }
 
 /* about */
