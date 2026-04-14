@@ -290,7 +290,14 @@
         </div>
     </footer>
 
-    <button class="scroll-top" id="scrollTop">↑</button>
+    <!-- scroll to top progress ring -->
+    <div class="scroll-top" id="scrollTop">
+        <svg class="progress-ring" viewBox="0 0 44 44">
+            <circle class="progress-ring-bg" cx="22" cy="22" r="18"/>
+            <circle class="progress-ring-fill" id="progressCircle" cx="22" cy="22" r="18"/>
+        </svg>
+        <span class="scroll-arrow">↑</span>
+    </div>
 
     <script src="script.js"></script>
 
