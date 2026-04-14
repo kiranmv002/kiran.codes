@@ -340,27 +340,20 @@ section { padding: 100px 80px; }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* scroll to top */
+/* scroll to top progress ring */
 .scroll-top {
     position: fixed;
-    bottom: 30px; right: 30px;
-    width: 44px; height: 44px;
-    background: var(--accent);
-    color: #0b0f19;
-    border: none;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 700;
+    bottom: 30px;
+    right: 30px;
+    width: 44px;
+    height: 44px;
     cursor: pointer;
     display: none;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
     z-index: 999;
+    transition: transform 0.3s ease;
 }
-
-.scroll-top:hover { background: var(--accent-dark); transform: translateY(-3px); }
-.scroll-top.show { display: flex; }
 
 /* about */
 #about { background: var(--bg2); }
