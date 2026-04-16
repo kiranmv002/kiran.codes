@@ -66,11 +66,19 @@ window.addEventListener('scroll', () => {
     const scrollPercent = scrollTop / docHeight
     const offset = circumference - (scrollPercent * circumference)
 
+    progressCircle.style.strokeDashoffset = offset
 
+    if (scrollTop > 400) {
+        scrollTopBtn.classList.add('show')
+    } else {
+        scrollTopBtn.classList.remove('show')
+    }
+})
 
 scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
 })
+
 
 // typing animation
 const tagline = document.getElementById('tagline')
