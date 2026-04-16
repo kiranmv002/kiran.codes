@@ -138,7 +138,13 @@ files → `index.html` `style.css`
 - right — social links
 - bottom bar with copyright and credit
 - mobile responsive — stacks to single column
-  
+
+### ✅ day 13 — back to top progress ring
+files → `index.html` `style.css` `script.js`
+
+- replaced plain scroll button with svg progress ring
+- ring fills up as you scroll down the page
+
 ---
 
 ## 📊 progress
