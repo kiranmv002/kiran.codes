@@ -166,6 +166,7 @@ files → `index.html` `style.css` `script.js`
 | day 9   | custom 404 page                       | ✅ done    |
 | day 10  | active nav highlight                  | ✅ done    |
 | day 11  | footer improvements                   | ✅ done    |
+| day 12  | back to top progress ring             | ✅ done    |
 ---
 
 day 11 done. portfolio is getting more and more polished 🔥
