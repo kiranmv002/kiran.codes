@@ -149,6 +149,12 @@ files → `index.html` `style.css` `script.js`
 - scales up on hover
 - smooth scroll to top on click
 
+### ✅ day 13 — back to top progress ring
+files → `index.html` `style.css` `script.js`
+
+- replaced plain scroll button with svg progress ring
+- ring fills up as you scroll down the page
+
 ---
 
 ## 📊 progress
