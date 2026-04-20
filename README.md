@@ -154,6 +154,10 @@ files → `index.html` `style.css` `script.js`
 
 - replaced plain scroll button with svg progress ring
 - ring fills up as you scroll down the page
+- ring empties as you scroll back up
+- teal circle with up arrow in center
+- scales up on hover
+- smooth scroll to top on click
 
 ---
 
