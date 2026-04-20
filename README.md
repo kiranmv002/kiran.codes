@@ -181,6 +181,6 @@ files → `index.html` `style.css` `script.js`
 
 ---
 
-day 12 done. portfolio is getting more and more polished 🔥
+day 13 done. portfolio is getting more and more polished 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
