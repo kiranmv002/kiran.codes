@@ -177,6 +177,8 @@ files → `index.html` `style.css` `script.js`
 | day 10  | active nav highlight                  | ✅ done    |
 | day 11  | footer improvements                   | ✅ done    |
 | day 12  | back to top progress ring             | ✅ done    |
+| day 13 | back to top progress ring              | ✅ done    |
+
 ---
 
 day 12 done. portfolio is getting more and more polished 🔥
