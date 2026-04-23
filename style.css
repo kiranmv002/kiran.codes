@@ -208,6 +208,22 @@ section { padding: 100px 80px; }
     font-family: 'DM Sans', sans-serif;
 }
 
+.filter-tab:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.filter-tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #0b0f19;
+    font-weight: 600;
+}
+
+/* hide project cards when filtered */
+.project-card.hidden {
+    display: none;
+}
 
 .line {
     width: 60px;
