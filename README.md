@@ -159,6 +159,9 @@ files → `index.html` `style.css` `script.js`
 - scales up on hover
 - smooth scroll to top on click
 
+### ✅ day 14 — project filter tabs
+files → `index.html` `style.css` `script.js`
+
 ---
 
 ## 📊 progress
