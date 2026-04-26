@@ -21,6 +21,7 @@ body.light {
     --muted: #64748b;
     --light: #334155;
 }
+
 /* custom cursor */
 * { cursor: none; }
 
@@ -70,7 +71,16 @@ body.light {
     background: var(--accent-dark);
 }
 
+.cursor-ring.click {
+    width: 28px;
+    height: 28px;
+}
 
+/* hide on mobile */
+@media (max-width: 768px) {
+    * { cursor: auto; }
+    .cursor-dot, .cursor-ring { display: none; }
+}
 
 html { scroll-behavior: smooth; }
 
