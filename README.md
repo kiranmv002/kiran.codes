@@ -162,6 +162,12 @@ files → `index.html` `style.css` `script.js`
 ### ✅ day 14 — project filter tabs
 files → `index.html` `style.css` `script.js`
 
+- added filter tabs above projects section
+- filter by all javascript python c html
+- active tab highlights in teal
+- non matching cards hide instantly
+- coming soon card always visible in all tab
+
 ---
 
 ## 📊 progress
