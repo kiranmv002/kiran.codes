@@ -51,6 +51,25 @@ body.light {
     opacity: 0.6;
 }
 
+/* cursor grows on hover of interactive elements */
+.cursor-dot.hover {
+    width: 12px;
+    height: 12px;
+}
+
+.cursor-ring.hover {
+    width: 50px;
+    height: 50px;
+    opacity: 0.4;
+}
+
+/* cursor changes on clickable elements */
+.cursor-dot.click {
+    width: 6px;
+    height: 6px;
+    background: var(--accent-dark);
+}
+
 
 
 html { scroll-behavior: smooth; }
