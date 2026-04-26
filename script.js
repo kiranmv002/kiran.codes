@@ -178,3 +178,15 @@ if (contactForm) {
         submitBtn.disabled = false
     })
 }
+
+// project filter tabs
+const filterTabs = document.querySelectorAll('.filter-tab')
+const projectCards = document.querySelectorAll('.project-card')
+
+filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+
+        // update active tab
+        filterTabs.forEach(t => t.classList.remove('active'))
+        tab.classList.add('active')
+
