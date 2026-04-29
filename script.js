@@ -34,6 +34,34 @@ function animateRing() {
 
 animateRing()
 
+// hover effect on interactive elements
+const interactiveEls = document.querySelectorAll(
+    'a, button, .project-card, .skill-category, .social-card, .filter-tab, .stat'
+)
+
+interactiveEls.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+        cursorDot.classList.add('hover')
+        cursorRing.classList.add('hover')
+    })
+    el.addEventListener('mouseleave', () => {
+        cursorDot.classList.remove('hover')
+        cursorRing.classList.remove('hover')
+    })
+})
+
+// click effect
+window.addEventListener('mousedown', () => {
+    cursorDot.classList.add('click')
+    cursorRing.classList.add('click')
+})
+
+window.addEventListener('mouseup', () => {
+    cursorDot.classList.remove('click')
+    cursorRing.classList.remove('click')
+})
+
+
 // page loader
 const loader = document.getElementById('loader')
 
