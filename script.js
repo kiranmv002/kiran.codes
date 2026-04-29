@@ -61,6 +61,16 @@ window.addEventListener('mouseup', () => {
     cursorRing.classList.remove('click')
 })
 
+// hide cursor when leaving window
+window.addEventListener('mouseleave', () => {
+    cursorDot.style.opacity = '0'
+    cursorRing.style.opacity = '0'
+})
+
+window.addEventListener('mouseenter', () => {
+    cursorDot.style.opacity = '1'
+    cursorRing.style.opacity = '0.6'
+})
 
 // page loader
 const loader = document.getElementById('loader')
