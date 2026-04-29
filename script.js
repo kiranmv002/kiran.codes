@@ -1,3 +1,39 @@
+// custom cursor
+const cursorDot = document.getElementById('cursorDot')
+const cursorRing = document.getElementById('cursorRing')
+
+let ringX = 0
+let ringY = 0
+let dotX = 0
+let dotY = 0
+let mouseX = 0
+let mouseY = 0
+
+// move dot instantly with mouse
+window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX
+    mouseY = e.clientY
+
+    dotX = mouseX
+    dotY = mouseY
+
+    cursorDot.style.left = dotX + 'px'
+    cursorDot.style.top = dotY + 'px'
+})
+
+// smooth ring follows with delay
+function animateRing() {
+    ringX += (mouseX - ringX) * 0.12
+    ringY += (mouseY - ringY) * 0.12
+
+    cursorRing.style.left = ringX + 'px'
+    cursorRing.style.top = ringY + 'px'
+
+    requestAnimationFrame(animateRing)
+}
+
+animateRing()
+
 // page loader
 const loader = document.getElementById('loader')
 
