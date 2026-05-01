@@ -171,6 +171,12 @@ files → `index.html` `style.css` `script.js`
 ### ✅ day 15 — smooth cursor effect
 files → `index.html` `style.css` `script.js`
 
+- custom teal dot follows cursor instantly
+- teal ring follows with smooth delay
+- ring and dot grow on hovering interactive elements
+- shrinks on mouse click
+- cursor hides when leaving the window
+- hidden on mobile devices automatically
 
 ---
 
