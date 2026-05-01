@@ -168,6 +168,10 @@ files → `index.html` `style.css` `script.js`
 - non matching cards hide instantly
 - coming soon card always visible in all tab
 
+### ✅ day 15 — smooth cursor effect
+files → `index.html` `style.css` `script.js`
+
+
 ---
 
 ## 📊 progress
