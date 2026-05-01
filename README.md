@@ -198,9 +198,10 @@ files → `index.html` `style.css` `script.js`
 | day 12  | back to top progress ring             | ✅ done    |
 | day 13  | back to top progress ring             | ✅ done    |
 | day 14  | project filter tabs                   | ✅ done    |
+| day 15 | smooth cursor effect                   | ✅ done    |
 
 ---
 
-day 14 done. portfolio is getting more and more polished 🔥
+day 15 done. portfolio is getting more and more polished 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
