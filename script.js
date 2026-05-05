@@ -263,4 +263,44 @@ filterTabs.forEach(tab => {
         // update active tab
         filterTabs.forEach(t => t.classList.remove('active'))
         tab.classList.add('active')
+// project modal
+const modalOverlay = document.getElementById('modalOverlay')
+const modalClose = document.getElementById('modalClose')
+const modalContent = document.getElementById('modalContent')
 
+// open modal when project card is clicked
+document.querySelectorAll('.project-card:not(.building)').forEach(card => {
+    card.addEventListener('click', () => {
+        const title = card.getAttribute('data-title')
+        const icon = card.getAttribute('data-icon')
+        const desc = card.getAttribute('data-desc')
+        const tech = card.getAttribute('data-tech')
+        const link = card.getAttribute('data-link')
+        const status = card.getAttribute('data-status')
+
+        if (!title) return
+
+        const techTags = tech.split(',').map(t =>
+            `<span>${t.trim()}</span>`
+        ).join('')
+
+        const statusLabel = status === 'active' ? 'actively maintained' : 'completed'
+
+        modalContent.innerHTML = `
+            <div class="modal-icon">${icon}</div>
+            <h2 class="modal-title">${title}</h2>
+            <p class="modal-desc">${desc}</p>
+            <div class="modal-tech">${techTags}</div>
+            <div class="modal-status ${status}">
+                <div class="dot"></div>
+                <span>${statusLabel}</span>
+            </div>
+            <a href="${link}" target="_blank" class="modal-btn">
+                view on GitHub →
+            </a>
+        `
+
+        modalOverlay.classList.add('open')
+        document.body.style.overflow = 'hidden'
+    })
+})
