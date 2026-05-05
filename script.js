@@ -263,6 +263,7 @@ filterTabs.forEach(tab => {
         // update active tab
         filterTabs.forEach(t => t.classList.remove('active'))
         tab.classList.add('active')
+
 // project modal
 const modalOverlay = document.getElementById('modalOverlay')
 const modalClose = document.getElementById('modalClose')
@@ -303,4 +304,20 @@ document.querySelectorAll('.project-card:not(.building)').forEach(card => {
         modalOverlay.classList.add('open')
         document.body.style.overflow = 'hidden'
     })
+})
+
+// close modal
+function closeModal() {
+    modalOverlay.classList.remove('open')
+    document.body.style.overflow = ''
+}
+
+modalClose.addEventListener('click', closeModal)
+
+modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) closeModal()
+})
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal()
 })
