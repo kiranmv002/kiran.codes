@@ -4,37 +4,26 @@ const cursorRing = document.getElementById('cursorRing')
 
 let ringX = 0
 let ringY = 0
-let dotX = 0
-let dotY = 0
 let mouseX = 0
 let mouseY = 0
 
-// move dot instantly with mouse
 window.addEventListener('mousemove', (e) => {
     mouseX = e.clientX
     mouseY = e.clientY
-
-    dotX = mouseX
-    dotY = mouseY
-
-    cursorDot.style.left = dotX + 'px'
-    cursorDot.style.top = dotY + 'px'
+    cursorDot.style.left = mouseX + 'px'
+    cursorDot.style.top = mouseY + 'px'
 })
 
-// smooth ring follows with delay
 function animateRing() {
     ringX += (mouseX - ringX) * 0.12
     ringY += (mouseY - ringY) * 0.12
-
     cursorRing.style.left = ringX + 'px'
     cursorRing.style.top = ringY + 'px'
-
     requestAnimationFrame(animateRing)
 }
 
 animateRing()
 
-// hover effect on interactive elements
 const interactiveEls = document.querySelectorAll(
     'a, button, .project-card, .skill-category, .social-card, .filter-tab, .stat'
 )
@@ -50,7 +39,6 @@ interactiveEls.forEach(el => {
     })
 })
 
-// click effect
 window.addEventListener('mousedown', () => {
     cursorDot.classList.add('click')
     cursorRing.classList.add('click')
@@ -61,7 +49,6 @@ window.addEventListener('mouseup', () => {
     cursorRing.classList.remove('click')
 })
 
-// hide cursor when leaving window
 window.addEventListener('mouseleave', () => {
     cursorDot.style.opacity = '0'
     cursorRing.style.opacity = '0'
@@ -132,7 +119,7 @@ document.querySelectorAll('.fade-up').forEach(el => {
 // scroll to top progress ring
 const scrollTopBtn = document.getElementById('scrollTop')
 const progressCircle = document.getElementById('progressCircle')
-const circumference = 2 * Math.PI * 18   // r=18 → 113.09
+const circumference = 2 * Math.PI * 18
 
 window.addEventListener('scroll', () => {
     const scrollTop = window.scrollY
@@ -152,7 +139,6 @@ window.addEventListener('scroll', () => {
 scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
 })
-
 
 // typing animation
 const tagline = document.getElementById('tagline')
@@ -259,17 +245,27 @@ const projectCards = document.querySelectorAll('.project-card')
 
 filterTabs.forEach(tab => {
     tab.addEventListener('click', () => {
-
-        // update active tab
         filterTabs.forEach(t => t.classList.remove('active'))
         tab.classList.add('active')
+
+        const filter = tab.getAttribute('data-filter')
+
+        projectCards.forEach(card => {
+            const category = card.getAttribute('data-category')
+            if (filter === 'all' || category === filter || category === 'all') {
+                card.classList.remove('hidden')
+            } else {
+                card.classList.add('hidden')
+            }
+        })
+    })
+})
 
 // project modal
 const modalOverlay = document.getElementById('modalOverlay')
 const modalClose = document.getElementById('modalClose')
 const modalContent = document.getElementById('modalContent')
 
-// open modal when project card is clicked
 document.querySelectorAll('.project-card:not(.building)').forEach(card => {
     card.addEventListener('click', () => {
         const title = card.getAttribute('data-title')
@@ -306,7 +302,6 @@ document.querySelectorAll('.project-card:not(.building)').forEach(card => {
     })
 })
 
-// close modal
 function closeModal() {
     modalOverlay.classList.remove('open')
     document.body.style.overflow = ''
