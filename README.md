@@ -178,6 +178,17 @@ files → `index.html` `style.css` `script.js`
 - cursor hides when leaving the window
 - hidden on mobile devices automatically
 
+### ✅ day 16 — project modal popup
+files → `index.html` `style.css` `script.js`
+
+- click any project card to open modal
+- modal shows icon title description tech stack
+- active status shows pulsing teal dot
+- completed status shows grey dot
+- view on github button inside modal
+- close with x button click outside or escape key
+- smooth slide up animation with blur backdrop
+
 ---
 
 ## 📊 progress
