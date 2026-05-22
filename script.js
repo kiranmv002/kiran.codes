@@ -103,7 +103,7 @@ window.addEventListener('scroll', () => {
     })
 })
 
-// scroll animations
+// scroll animations — all animation types
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -112,7 +112,9 @@ const observer = new IntersectionObserver((entries) => {
     })
 }, { threshold: 0.1 })
 
-document.querySelectorAll('.fade-up').forEach(el => {
+document.querySelectorAll(
+    '.fade-up, .fade-left, .fade-right, .fade-in, .zoom-in'
+).forEach(el => {
     observer.observe(el)
 })
 
