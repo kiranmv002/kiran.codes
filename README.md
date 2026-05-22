@@ -189,6 +189,15 @@ files → `index.html` `style.css` `script.js`
 - close with x button click outside or escape key
 - smooth slide up animation with blur backdrop
 
+### ✅ day 17 — animate on scroll improvements
+files → `index.html` `style.css` `script.js`
+
+- added fade-left — slides in from left
+- added fade-right — slides in from right
+- added fade-in — simple opacity fade
+- added zoom-in — scales up from 92%
+
+
 ---
 
 ## 📊 progress
