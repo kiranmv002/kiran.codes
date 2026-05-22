@@ -196,7 +196,12 @@ files → `index.html` `style.css` `script.js`
 - added fade-right — slides in from right
 - added fade-in — simple opacity fade
 - added zoom-in — scales up from 92%
-
+- added stagger class — children animate one by one
+- about — photo from left text from right
+- skills — zoom in with stagger delay
+- projects — cards zoom in with stagger
+- contact — info from left form from right
+- observer now watches all animation types
 
 ---
 
