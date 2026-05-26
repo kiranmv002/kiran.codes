@@ -203,6 +203,7 @@ files → `index.html` `style.css` `script.js`
 - contact — info from left form from right
 - observer now watches all animation types
 
+### Day18
 ---
 
 ## 📊 progress
