@@ -468,6 +468,49 @@ section { padding: 100px 80px; }
 
 .btn-secondary:hover { background: var(--accent); color: #0b0f19; transform: translateY(-2px); }
 
+/* resume button — navbar */
+.resume-btn {
+    padding: 8px 18px;
+    border: 1.5px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-family: 'DM Sans', sans-serif;
+    white-space: nowrap;
+}
+
+.resume-btn:hover {
+    background: var(--accent);
+    color: #0b0f19;
+    transform: translateY(-2px);
+}
+
+/* resume button — hero */
+.btn-resume {
+    padding: 13px 30px;
+    border: 1.5px solid var(--border);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.btn-resume:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* hide resume btn on mobile nav */
+@media (max-width: 768px) {
+    .resume-btn { display: none; }
+}
 .social-links {
     display: flex;
     gap: 20px;
