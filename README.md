@@ -226,6 +226,7 @@ files → `index.html` `style.css` `script.js`
 | day 14  | project filter tabs                   | ✅ done    |
 | day 15 | smooth cursor effect                   | ✅ done    |
 | day 16 | project modal popup                    | ✅ done    |
+| day 17 | animate on scroll improvements         | ✅ done    |
 ---
 
 day 15 done. portfolio is getting more and more polished 🔥
