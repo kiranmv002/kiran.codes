@@ -203,7 +203,12 @@ files → `index.html` `style.css` `script.js`
 - contact — info from left form from right
 - observer now watches all animation types
 
-### Day18
+### ✅ day 18 — resume download button
+files → `index.html` `style.css`
+
+- added resume button in navbar — teal outline style
+- added resume button in hero section beside contact me
+
 ---
 
 ## 📊 progress
