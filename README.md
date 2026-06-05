@@ -236,8 +236,9 @@ files → `index.html` `style.css`
 | day 15 | smooth cursor effect                   | ✅ done    |
 | day 16 | project modal popup                    | ✅ done    |
 | day 17 | animate on scroll improvements         | ✅ done    |
+| day 18 | resume download button | ✅ done |
 ---
 
-day 15 done. portfolio is getting more and more polished 🔥
+day 18 done. portfolio is getting more and more polished 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
