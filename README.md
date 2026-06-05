@@ -208,6 +208,10 @@ files → `index.html` `style.css`
 
 - added resume button in navbar — teal outline style
 - added resume button in hero section beside contact me
+- both buttons download pdf on click
+- navbar button hidden on mobile
+- hover effects on both buttons
+- pdf stored in assets folder
 
 ---
 
