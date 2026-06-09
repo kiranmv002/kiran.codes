@@ -1051,6 +1051,34 @@ footer {
     gap: 24px;
 }
 
+.mobile-socials a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.mobile-socials a:hover { color: var(--accent); }
+
+/* mobile */
+@media (max-width: 768px) {
+    nav { padding: 20px 24px; }
+    nav ul { display: none; }
+    .menu-btn { display: block; }
+    .resume-btn { display: none; }
+    section { padding: 70px 24px; }
+    #hero { padding: 0 24px; }
+    #hero h1 { font-size: 44px; }
+    .about-content { flex-direction: column; align-items: center; }
+    .photo-wrapper { width: 160px; height: 160px; }
+    .about-stats { flex-direction: row; }
+    .hero-btns { flex-direction: column; }
+    .skills-categories { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-content { flex-direction: column; gap: 28px; }
+    .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+}
+
 
 /* modal */
 .modal-overlay {
