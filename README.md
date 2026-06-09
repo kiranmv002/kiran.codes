@@ -213,6 +213,13 @@ files → `index.html` `style.css`
 - hover effects on both buttons
 - pdf stored in assets folder
 
+### ✅ day 19 — mobile nav improvements
+files → `index.html` `style.css` `script.js`
+
+- replaced dropdown with full screen overlay menu
+- menu slides in from right with smooth animation
+
+
 ---
 
 ## 📊 progress
