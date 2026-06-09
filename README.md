@@ -252,6 +252,6 @@ files → `index.html` `style.css` `script.js`
 | day 19 | mobile nav improvements | ✅ done |
 ---
 
-day 18 done. portfolio is getting more and more polished 🔥
+day 19 done. portfolio is getting more and more polished 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
