@@ -1009,6 +1009,48 @@ footer {
     transition: all 0.3s ease;
 }
 
+.mobile-close:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.mobile-nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.mobile-nav-links li a {
+    display: block;
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--light);
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+    border-bottom: 1px solid var(--border);
+}
+
+.mobile-nav-links li a:hover {
+    color: var(--accent);
+    transform: translateX(8px);
+}
+
+.mobile-menu-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 24px;
+}
+
+.mobile-socials {
+    display: flex;
+    gap: 24px;
+}
+
 
 /* modal */
 .modal-overlay {
