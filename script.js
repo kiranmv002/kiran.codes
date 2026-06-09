@@ -68,17 +68,25 @@ window.addEventListener('load', () => {
     }, 1800)
 })
 
-// navbar hamburger toggle
+// mobile menu
 const menuBtn = document.getElementById('menuBtn')
-const navLinks = document.getElementById('navLinks')
+const mobileMenu = document.getElementById('mobileMenu')
+const mobileClose = document.getElementById('mobileClose')
 
 menuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('open')
+    mobileMenu.classList.add('open')
+    document.body.style.overflow = 'hidden'
 })
 
-navLinks.querySelectorAll('a').forEach(link => {
+mobileClose.addEventListener('click', () => {
+    mobileMenu.classList.remove('open')
+    document.body.style.overflow = ''
+})
+
+document.querySelectorAll('.mobile-link').forEach(link => {
     link.addEventListener('click', () => {
-        navLinks.classList.remove('open')
+        mobileMenu.classList.remove('open')
+        document.body.style.overflow = ''
     })
 })
 
