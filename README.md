@@ -218,7 +218,12 @@ files → `index.html` `style.css` `script.js`
 
 - replaced dropdown with full screen overlay menu
 - menu slides in from right with smooth animation
-
+- big bold nav links with hover effect
+- resume download button in mobile menu
+- social links at bottom of menu
+- close with x button or clicking any link
+- page scroll locks when menu is open
+- clean mobile experience on all screen sizes
 
 ---
 
