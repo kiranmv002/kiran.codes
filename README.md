@@ -229,7 +229,11 @@ files → `index.html` `style.css` `script.js`
 files → `index.html` `style.css`
 
 - added mini projects section between projects and contact
-
+- 4 cards — todo app calculator weather app quiz app
+- each card shows icon tech tag description and code link
+- mini added to navbar footer and mobile menu
+- hover lifts card with teal border
+  
 ---
 
 ## 📊 progress
