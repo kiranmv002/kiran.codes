@@ -225,6 +225,11 @@ files → `index.html` `style.css` `script.js`
 - page scroll locks when menu is open
 - clean mobile experience on all screen sizes
 
+### ✅ day 20 — mini projects section
+files → `index.html` `style.css`
+
+- added mini projects section between projects and contact
+
 ---
 
 ## 📊 progress
