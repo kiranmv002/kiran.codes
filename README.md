@@ -262,6 +262,6 @@ files → `index.html` `style.css`
 | day 20 | mini projects section | ✅ done |
 ---
 
-day 19 done. portfolio is getting more and more polished 🔥
+day 20 done. portfolio is getting more and more polished 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
