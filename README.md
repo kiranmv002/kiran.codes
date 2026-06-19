@@ -259,6 +259,7 @@ files → `index.html` `style.css`
 | day 17 | animate on scroll improvements         | ✅ done    |
 | day 18 | resume download button | ✅ done |
 | day 19 | mobile nav improvements | ✅ done |
+| day 20 | mini projects section | ✅ done |
 ---
 
 day 19 done. portfolio is getting more and more polished 🔥
