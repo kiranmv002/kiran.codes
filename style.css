@@ -891,6 +891,7 @@ section { padding: 100px 80px; }
     min-height: 20px;
     color: var(--accent);
 }
+
 /* github section */
 #github { background: var(--bg2); }
 
@@ -949,6 +950,102 @@ section { padding: 100px 80px; }
     color: var(--muted);
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.gh-img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+/* recent repos */
+.gh-repos-label {
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.gh-repos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+}
+
+.gh-repo-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.gh-repo-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.gh-repo-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.gh-repo-desc {
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.gh-repo-meta {
+    display: flex;
+    gap: 14px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.gh-repo-meta span { display: flex; align-items: center; gap: 4px; }
+
+.gh-loading {
+    color: var(--muted);
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+/* github profile button */
+.gh-link-wrap { text-align: center; }
+
+.gh-profile-btn {
+    display: inline-block;
+    padding: 13px 32px;
+    border: 1.5px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.gh-profile-btn:hover {
+    background: var(--accent);
+    color: #0b0f19;
+    transform: translateY(-2px);
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .github-stats { grid-template-columns: repeat(2, 1fr); }
+    .gh-repos-grid { grid-template-columns: 1fr; }
 }
 
 /* mini projects section */
