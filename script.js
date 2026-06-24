@@ -340,3 +340,6 @@ async function loadGithubStats() {
         const user = await userRes.json()
         const repos = await reposRes.json()
 
+         // update stats
+        document.getElementById('ghRepos').textContent = user.public_repos
+        document.getElementById('ghFollowers').textContent = user.followers
