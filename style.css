@@ -891,6 +891,37 @@ section { padding: 100px 80px; }
     min-height: 20px;
     color: var(--accent);
 }
+/* github section */
+#github { background: var(--bg2); }
+
+.github-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.github-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.gh-stat-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.gh-stat-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.gh-stat-icon { font-size: 24px; margin-bottom: 10px; }
+
 
 /* mini projects section */
 #mini-projects { background: var(--bg); }
