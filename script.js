@@ -326,3 +326,17 @@ modalOverlay.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal()
 })
+
+// github activity — fetch live stats and repos
+async function loadGithubStats() {
+    try {
+        const [userRes, reposRes] = await Promise.all([
+            fetch('https://api.github.com/users/kiranmv002'),
+            fetch('https://api.github.com/users/kiranmv002/repos?sort=updated&per_page=6')
+        ])
+
+        if (!userRes.ok || !reposRes.ok) return
+
+        const user = await userRes.json()
+        const repos = await reposRes.json()
+
