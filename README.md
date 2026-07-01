@@ -239,7 +239,12 @@ files → `index.html` `style.css` `script.js`
 
 - added github activity section
 - 4 stat cards — repos stars followers commits
-
+- stats loaded live from github api
+- recent repos grid showing 6 latest repos
+- each repo shows name description stars forks language
+- view full github profile button
+- github added to navbar
+- mobile responsive 2 column grid
   
 ---
 
