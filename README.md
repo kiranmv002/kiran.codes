@@ -275,6 +275,6 @@ files → `index.html` `style.css` `script.js`
 | day 21 | github activity section | ✅ done |
 ---
 
-day 20 done. portfolio is getting more and more polished 🔥
+day 21 done. portfolio is getting more and more polished 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
