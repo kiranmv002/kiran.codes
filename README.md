@@ -233,6 +233,13 @@ files → `index.html` `style.css`
 - each card shows icon tech tag description and code link
 - mini added to navbar footer and mobile menu
 - hover lifts card with teal border
+
+### ✅ day 21 — github activity section
+files → `index.html` `style.css` `script.js`
+
+- added github activity section
+- 4 stat cards — repos stars followers commits
+
   
 ---
 
