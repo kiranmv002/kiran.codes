@@ -347,3 +347,26 @@ async function loadGithubStats() {
         // count total stars
         const totalStars = repos.reduce((sum, repo) => sum + repo.stargazers_count, 0)
         document.getElementById('ghStars').textContent = totalStars
+
+        // render repos
+        const grid = document.getElementById('ghReposGrid')
+        grid.innerHTML = repos.slice(0, 6).map(repo => `
+            <a href="${repo.html_url}" target="_blank" class="gh-repo-card">
+                <div class="gh-repo-name">📁 ${repo.name}</div>
+                <div class="gh-repo-desc">${repo.description || 'no description'}</div>
+                <div class="gh-repo-meta">
+                    <span>⭐ ${repo.stargazers_count}</span>
+                    <span>🍴 ${repo.forks_count}</span>
+                    ${repo.language ? `<span>🔵 ${repo.language}</span>` : ''}
+                </div>
+            </a>
+        `).join('')
+
+    } catch (error) {
+        console.error('failed to load github stats:', error)
+        document.getElementById('ghReposGrid').innerHTML =
+            '<div class="gh-loading">failed to load repos</div>'
+    }
+}
+
+loadGithubStats()
