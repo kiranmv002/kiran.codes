@@ -1019,6 +1019,54 @@ section { padding: 100px 80px; }
     font-size: 14px;
     padding: 20px 0;
 }
+/* testimonials */
+#testimonials { background: var(--bg); }
+
+.testimonials-wrap {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonials-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+    min-width: 100%;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial-quote {
+    font-size: 40px;
+    color: var(--accent);
+    line-height: 1;
+    font-family: Georgia, serif;
+}
+
+.testimonial-text {
+    color: var(--light);
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
 
 /* github profile button */
 .gh-link-wrap { text-align: center; }
