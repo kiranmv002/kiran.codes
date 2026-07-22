@@ -245,7 +245,11 @@ files → `index.html` `style.css` `script.js`
 - view full github profile button
 - github added to navbar
 - mobile responsive 2 column grid
-  
+
+### ✅ day 22 — testimonials section
+files → `index.html` `style.css` `script.js`
+
+
 ---
 
 ## 📊 progress
