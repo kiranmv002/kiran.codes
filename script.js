@@ -370,3 +370,32 @@ async function loadGithubStats() {
 }
 
 loadGithubStats()
+// testimonials carousel
+const track = document.getElementById('testimonialsTrack')
+const dotsContainer = document.getElementById('testimonialDots')
+const prevBtn = document.getElementById('testimonialPrev')
+const nextBtn = document.getElementById('testimonialNext')
+
+if (track) {
+    const cards = track.querySelectorAll('.testimonial-card')
+    let current = 0
+    let autoPlay
+
+    // create dots
+    cards.forEach((_, i) => {
+        const dot = document.createElement('button')
+        dot.className = i === 0 ? 'testimonial-dot active' : 'testimonial-dot'
+        dot.addEventListener('click', () => goTo(i))
+        dotsContainer.appendChild(dot)
+    })
+
+    function goTo(index) {
+        current = (index + cards.length) % cards.length
+        track.style.transform = `translateX(-${current * 100}%)`
+        document.querySelectorAll('.testimonial-dot').forEach((dot, i) => {
+            dot.className = i === current ? 'testimonial-dot active' : 'testimonial-dot'
+        })
+    }
+
+    function next() { goTo(current + 1) }
+    function prev() { goTo(current - 1) }
