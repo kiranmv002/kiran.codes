@@ -370,6 +370,7 @@ async function loadGithubStats() {
 }
 
 loadGithubStats()
+
 // testimonials carousel
 const track = document.getElementById('testimonialsTrack')
 const dotsContainer = document.getElementById('testimonialDots')
@@ -399,3 +400,29 @@ if (track) {
 
     function next() { goTo(current + 1) }
     function prev() { goTo(current - 1) }
+
+    nextBtn.addEventListener('click', () => {
+        next()
+        resetAutoPlay()
+    })
+
+    prevBtn.addEventListener('click', () => {
+        prev()
+        resetAutoPlay()
+    })
+
+    function startAutoPlay() {
+        autoPlay = setInterval(next, 4000)
+    }
+
+    function resetAutoPlay() {
+        clearInterval(autoPlay)
+        startAutoPlay()
+    }
+
+    // pause on hover
+    track.addEventListener('mouseenter', () => clearInterval(autoPlay))
+    track.addEventListener('mouseleave', startAutoPlay)
+
+    startAutoPlay()
+}
