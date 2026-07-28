@@ -249,6 +249,11 @@ files → `index.html` `style.css` `script.js`
 ### ✅ day 22 — testimonials section
 files → `index.html` `style.css` `script.js`
 
+- added testimonials section with 4 cards
+- auto playing carousel every 4 seconds
+- prev next arrow buttons
+- dot navigation — active dot stretches
+
 
 ---
 
