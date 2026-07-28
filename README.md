@@ -258,6 +258,12 @@ files → `index.html` `style.css` `script.js`
 - avatar with initial letter in teal
 - mobile responsive
 
+### ✅ day 23 — learning timeline
+files → `index.html` `style.css`
+
+- added my journey timeline section
+- 6 items — started coding to goal
+
 ---
 
 ## 📊 progress
