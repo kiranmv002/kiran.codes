@@ -253,7 +253,10 @@ files → `index.html` `style.css` `script.js`
 - auto playing carousel every 4 seconds
 - prev next arrow buttons
 - dot navigation — active dot stretches
-
+- pauses on hover
+- smooth slide transition
+- avatar with initial letter in teal
+- mobile responsive
 
 ---
 
