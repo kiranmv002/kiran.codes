@@ -631,6 +631,41 @@ section { padding: 100px 80px; }
 }
 
 .stat p { color: var(--muted); font-size: 12px; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+/* timeline */
+#timeline { background: var(--bg2); }
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* center vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: calc(50% + 40px);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 40px);
+}
 
 /* skills - category grouping */
 .skills-categories {
