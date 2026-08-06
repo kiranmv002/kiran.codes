@@ -263,6 +263,13 @@ files → `index.html` `style.css`
 
 - added my journey timeline section
 - 6 items — started coding to goal
+- alternating left right layout
+- vertical connecting line with dots
+- active dot glows teal with shadow
+- current item has teal border
+- future item has dashed border
+- fade left and right scroll animations
+- mobile collapses to single column
 
 ---
 
