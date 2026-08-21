@@ -302,6 +302,6 @@ files → `index.html` `style.css`
 | day 23 | learning timeline | ✅ done |
 ---
 
-day 22 done. portfolio is getting more and more polished 🔥
+day 23 done. portfolio is getting more and more polished 🔥
 
 — Kiran, B.Tech CSE 2nd year 🎓
