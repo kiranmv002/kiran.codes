@@ -763,6 +763,26 @@ section { padding: 100px 80px; }
     font-weight: 500;
 }
 
+/* mobile timeline — single column */
+@media (max-width: 768px) {
+    .timeline::before { left: 16px; }
+
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+        justify-content: flex-start;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+
+    .timeline-dot {
+        left: 16px;
+    }
+
+    .timeline-content {
+        max-width: 100%;
+    }
+}
+
 /* skills - category grouping */
 .skills-categories {
     display: grid;
