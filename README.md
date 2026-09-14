@@ -271,6 +271,13 @@ files → `index.html` `style.css`
 - fade left and right scroll animations
 - mobile collapses to single column
 
+
+### ✅ day 24 — scroll progress bar
+files → `index.html` `style.css` `script.js`
+
+- thin teal progress bar fixed at top of page
+- fills left to right as you scroll down
+
 ---
 
 ## 📊 progress
