@@ -309,7 +309,6 @@ files → `index.html` `style.css` `script.js`
 | day 20 | mini projects section | ✅ done |
 | day 21 | github activity section | ✅ done |
 | day 22 | testimonials section | ✅ done |
-| day 23 | 
 ---
 
 day 22 done. portfolio is getting more and more polished 🔥
