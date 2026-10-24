@@ -309,7 +309,7 @@ files → `index.html` `style.css` `script.js`
 | day 20 | mini projects section | ✅ done |
 | day 21 | github activity section | ✅ done |
 | day 22 | testimonials section | ✅ done |
-| day 24 | learning timeline
+| day 24 | learning timeline | ✅ done |
 
 ---
 
