@@ -132,6 +132,27 @@ const progressCircle = document.getElementById('progressCircle')
 const scrollProgressBar = document.getElementById('scrollProgress')
 const circumference = 2 * Math.PI * 18
 
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight
+    const scrollPercent = scrollTop / docHeight
+
+    // top progress bar
+    scrollProgressBar.style.width = (scrollPercent * 100) + '%'
+
+    // ring
+    const offset = circumference - (scrollPercent * circumference)
+    progressCircle.style.strokeDashoffset = offset
+
+    // show hide scroll to top btn
+    if (scrollTop > 400) {
+        scrollTopBtn.classList.add('show')
+    } else {
+        scrollTopBtn.classList.remove('show')
+    }
+})
+
+
 
 // typing animation
 const tagline = document.getElementById('tagline')
