@@ -126,29 +126,12 @@ document.querySelectorAll(
     observer.observe(el)
 })
 
-// scroll to top progress ring
+// scroll to top progress ring + top progress bar
 const scrollTopBtn = document.getElementById('scrollTop')
 const progressCircle = document.getElementById('progressCircle')
+const scrollProgressBar = document.getElementById('scrollProgress')
 const circumference = 2 * Math.PI * 18
 
-window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight
-    const scrollPercent = scrollTop / docHeight
-    const offset = circumference - (scrollPercent * circumference)
-
-    progressCircle.style.strokeDashoffset = offset
-
-    if (scrollTop > 400) {
-        scrollTopBtn.classList.add('show')
-    } else {
-        scrollTopBtn.classList.remove('show')
-    }
-})
-
-scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-})
 
 // typing animation
 const tagline = document.getElementById('tagline')
