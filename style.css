@@ -11,6 +11,18 @@
     --muted: #6b7a99;
     --light: #9aaac4;
 }
+/* scroll progress bar */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+    z-index: 99999;
+    transition: width 0.1s ease;
+    border-radius: 0 2px 2px 0;
+}
 
 body.light {
     --bg: #f0f4f8;
